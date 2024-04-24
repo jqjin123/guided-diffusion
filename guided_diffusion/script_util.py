@@ -250,6 +250,7 @@ def create_classifier(
     for res in classifier_attention_resolutions.split(","):
         attention_ds.append(image_size // int(res))
 
+    # 分类器只有UNET的编码部分
     return EncoderUNetModel(
         image_size=image_size,
         in_channels=3,

@@ -25,6 +25,7 @@ from guided_diffusion.script_util import (
 from guided_diffusion.train_util import parse_resume_step_from_filename, log_loss_dict
 
 
+# 训练一个分类器
 def main():
     args = create_argparser().parse_args()
 
